@@ -1,6 +1,9 @@
-<h2>Mechanic Management</h2>
+{% extends "base.html" %}
 
-<table border="1">
+{% block content %}
+<h2 style="font-family: 'Source Serif 4', serif; margin-bottom: 2rem;">Mechanic Management</h2>
+
+<table>
     <thead>
         <tr>
             <th>MEC-ID</th>
@@ -20,18 +23,20 @@
             <td>5 Years</td>
             <td>₹25,000</td>
             <td>9876543210</td>
-            <td><button style="color: red;">Delete</button></td>
+            <td><button class="btn-delete">Delete</button></td>
         </tr>
     </tbody>
 </table>
 
-<hr>
-<h3>Add New Mechanic</h3>
-<form>
-    <input type="text" placeholder="Mechanic Name">
-    <input type="text" placeholder="Specialization">
-    <input type="number" placeholder="Experience (Yrs)">
-    <input type="number" placeholder="Salary">
-    <input type="text" placeholder="Phone">
-    <button type="submit">Add to System</button>
-</form>
+<div class="form-container">
+    <h3 style="font-family: 'Source Serif 4', serif; margin-top: 3rem;">Add New Mechanic</h3>
+    <form class="admin-form">
+        <input type="text" placeholder="Mechanic Name">
+        <input type="text" placeholder="Specialization">
+        <input type="number" placeholder="Experience (Yrs)">
+        <input type="number" placeholder="Salary">
+        <input type="text" placeholder="Phone">
+        <button type="submit" class="btn-primary">Add to System</button>
+    </form>
+</div>
+{% endblock %}

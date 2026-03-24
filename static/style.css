@@ -98,3 +98,55 @@ tr:hover td {
     border-radius: 2px;
     border-left: 4px solid var(--gold-accent);
 }
+/* --- Styles for Teammate 2 Pages --- */
+
+/* Delete Button Styling */
+.btn-delete {
+    background: none;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 6px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.btn-delete:hover {
+    background: #ff4d4d;
+    color: white;
+}
+
+/* Form Styling */
+.admin-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.admin-form input, .admin-form select {
+    padding: 10px;
+    border: 1px solid var(--slate);
+    background: var(--cream);
+    font-family: 'Inter', sans-serif;
+    border-radius: 2px;
+}
+
+/* Primary Action Button */
+.btn-primary {
+    background: var(--navy);
+    color: var(--gold-accent);
+    border: 1px solid var(--gold-accent);
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: var(--gold-accent);
+    color: var(--navy);
+}
