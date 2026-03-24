@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header" style="margin-bottom: 30px;">
+    <h1 style="font-family: 'Source Serif 4', serif; font-size: 2.5rem; color: var(--navy);">Vehicle Fleet</h1>
+    <hr style="border: 0; border-top: 1px solid var(--gold-accent); width: 50px; margin: 10px 0;">
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Vehicle ID</th>
+            <th>Reg. Number</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Fuel</th>
+            <th>Owner ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>V-902</td>
+            <td>KL-01-CZ-7788</td>
+            <td>Suzuki</td>
+            <td>Swift</td>
+            <td>Petrol</td>
+            <td>C-1001</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

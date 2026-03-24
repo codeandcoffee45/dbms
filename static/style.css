@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;1,8..60,600&display=swap');
+
+:root {
+    --navy: #001f3f;
+    --beige: #f5f5dc;
+    --cream: #fffdf5;
+    --gold-accent: #c5a059;
+    --slate: #4a5568;
+}
+
+body {
+    background-color: var(--beige);
+    color: var(--navy);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Sophisticated Navbar */
+.navbar {
+    background: var(--navy);
+    padding: 1.2rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.logo { 
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.6rem; 
+    color: var(--cream);
+    letter-spacing: -0.5px;
+}
+
+.logo span { color: var(--gold-accent); }
+
+.nav-links { list-style: none; display: flex; gap: 3rem; }
+.nav-links a { 
+    text-decoration: none; 
+    color: var(--cream); 
+    font-size: 0.9rem;
+    font-weight: 500; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.4s ease;
+}
+
+.nav-links a:hover { color: var(--gold-accent); transform: translateY(-2px); }
+
+/* Entrance Animation */
+@keyframes reveal {
+    from { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+    to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+.container { 
+    padding: 4rem 8%; 
+    animation: reveal 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Clean, High-End Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--cream);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+th { 
+    background: #002d5a;
+    color: var(--cream);
+    font-family: 'Source Serif 4', serif;
+    text-align: left;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+td { 
+    padding: 18px 20px;
+    border-bottom: 1px solid #eeebe0;
+    transition: all 0.3s ease;
+}
+
+tr:hover td {
+    background-color: #fdfaf0;
+    color: var(--gold-accent);
+}
+
+/* Status Cards */
+.stats-card {
+    background: var(--navy);
+    color: var(--cream);
+    padding: 30px;
+    border-radius: 2px;
+    border-left: 4px solid var(--gold-accent);
+}
