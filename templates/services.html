@@ -1,0 +1,37 @@
+<h2>Vehicle Service History</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Service-ID</th>
+            <th>Mileage</th>
+            <th>Labour Cost</th>
+            <th>Total Cost</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SRV-505</td>
+            <td>12,400 km</td>
+            <td>₹800</td>
+            <td>₹3,200</td>
+            <td>Brake Pad Replacement</td>
+            <td>2026-03-24</td>
+            <td><button style="color: red;">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h3>Log New Service</h3>
+<form>
+    <input type="text" placeholder="Service-ID">
+    <input type="text" placeholder="Mileage">
+    <input type="number" placeholder="Labour Cost">
+    <textarea placeholder="Problem Description"></textarea>
+    <button type="submit">Update Records</button>
+</form>
